@@ -18,5 +18,13 @@
     <ClCompile Include="Print(Main).cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="N1.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="N1.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
