@@ -2,10 +2,13 @@
 #include <string.h>
 
 #include "N1.h"
+#include "N2.h"
 
 #define N 100
 
 using namespace std;
+
+typedef long double lodo;
 
 void CinText(char Text[], int Size) {
 	cout << "Enter Text: ";
@@ -13,9 +16,9 @@ void CinText(char Text[], int Size) {
 }
 
 
-void PrintText(char Text[]) {
-	for (int i = 0; i < strlen(Text); i++) {
-		cout << Text[i];
+void PrintStrArr(char StrArr[]) {
+	for (int i = 0; i < strlen(StrArr); i++) {
+		cout << StrArr[i];
 	}
 	cout << endl;
 }
@@ -32,6 +35,15 @@ int main() {
 	CinText(PatternSymbols, N);
 	Text = DeleteSymbols(Text, PatternSymbols, Size);
 
-	PrintText(Text);
+	PrintStrArr(Text);
 	delete[] Text;
+
+	lodo Number;
+	cout << "Enter Number: ";
+	cin >> Number;
+
+	char StrNum[N / 2];
+
+	TransformNumberInStr(Number, StrNum);
+	PrintStrArr(StrNum);
 }

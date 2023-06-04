@@ -21,9 +21,15 @@
     <ClCompile Include="N1.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="N2.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="N1.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="N2.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
